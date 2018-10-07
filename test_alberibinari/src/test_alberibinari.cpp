@@ -15,20 +15,20 @@ int main() {
 	asd.ins_root();
 	asd.write(asd.root(),1);
 
-	n1=asd.root();
+	n1=asd.root();	//assegno ad n1 la funzione di radice dell'albero
 
 	asd.ins_sx(n1);
 	asd.ins_dx(n1);
 	asd.write(asd.sx(n1),2);
 	asd.write(asd.dx(n1),3);
 
-	n2=asd.sx(n1);
+	n2=asd.sx(n1);	//assegno ad n2 la funzione di figlio sinistro della radice
 	asd.ins_sx(n2);
 	asd.ins_dx(n2);
 	asd.write(asd.sx(n2),4);
 	asd.write(asd.dx(n2),5);
 
-	n3=asd.dx(n1);
+	n3=asd.dx(n1);	//assegno ad n3 la funzione di figlio destro della radice
 	asd.ins_sx(n3);
 	asd.ins_dx(n3);
 	asd.write(asd.sx(n3),6);
@@ -52,7 +52,7 @@ int main() {
 
 	getchar();
 
-	cout<<"l'albero è bilanciato?\n";
+	cout<<"l'albero Ã¨ bilanciato?\n";
 	bool bil = asdBilanciato.is_height_balanced(asd);
 	if(bil){
 		cout<<"SI\n";
